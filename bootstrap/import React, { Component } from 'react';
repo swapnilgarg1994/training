@@ -1,0 +1,43 @@
+import React, { Component } from 'react';
+
+export class ImageItem  extends Component {
+  render() {
+    return(
+      <div class="col">
+        <div class="card">
+          <img class="card-img-top" src={require("../images/Landscape/"+this.props.imageItem.source)} />
+          <div class="card-body">
+            <button type="button" class="btn btn-success" >Like</button>
+            <button type="button" class="btn btn-success" >Dislike</button>
+          </div>
+        </div>
+      </div>
+    )
+  }
+}
+
+
+
+class ImageGallery extends Component{
+  render(){
+    return(
+      <div>
+      <article>
+        <div class="container-fluid">
+          <h1 class="h1-article">Landscape</h1>
+        </div>
+
+        <div class="row container-fluid">
+          {
+            data[0].images.map((item) => {
+              return (
+                <ImageItem imageItem={item} />
+              )
+            })
+          }
+        </div>
+        </article>
+      </div>
+    )
+  }
+}

@@ -1,0 +1,100 @@
+class ShowUrls extends React.Component {
+  constructor() {
+    super();
+    this.state={
+      showModal : false
+    }
+  }
+  handleHideModal(){
+        	this.setState({showModal: false});
+        }
+        handleShowModal(){
+        	this.setState({showModal: true});
+        }
+render() {
+  let next_url = this.props.urls.next_url
+  let prev_url = this.props.urls.previous_url
+  let end_url = this.props.urls.end_url
+  let show_next_url, show_or_ui, show_prev_url, show_end_url
+
+  if(prev_url){
+    show_prev_url = <a
+      className="btn btn-lg back-btn-ui theme-btn-lg text-blue hover-effect-3 button1 cursor-pointer"
+      url="prev_url"
+      onClick={event => this.props.handleChange(event, prev_url)}
+      data-disable-with="Submitting your answers"
+      >
+      Save & Go to Previous Section
+    </a>
+  }
+
+  if(prev_url && next_url || prev_url && end_url ){
+     show_or_ui = <div
+      className="or border border-secondary rounded-circle position-relative my-4">
+      <div className="text-blue">Or</div>
+    </div>
+  }
+
+  if(next_url) {
+    debugger
+    show_next_url = <a
+      className="btn btn-lg bg-blue text-white theme-btn-lg hover-effect-2 button1 cursor-pointer"
+      url="next_url"
+      onClick={() => this.handleShowModal}
+      data-disable-with="Submitting your answers"
+      >
+      Save & Go to Next Section
+    </a>
+
+  }
+
+  if(end_url){
+    show_end_url = <a
+      id="scroll-top"
+      className="btn btn-lg bg-blue text-white theme-btn-lg hover-effect-2 button1 cursor-pointer"
+      url="end_url"
+      onClick={event => this.props.handleChange(event, end_url)}>
+      Save & Go to Next Section
+    </a>
+  }
+  return(
+    <div>
+      {show_prev_url}
+      {show_or_ui}
+      {show_next_url}
+      {show_end_url}
+    </div>
+  )
+}
+}
+
+
+
+
+
+
+
+
+class Modal extends React.Component {
+        render(){
+        	return (
+              <div className="modal fade">
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <button type="button" className="close" data-dismiss="modal" onClick={()=>{this.props.handleHideModal}}><span>&times;</span></button>
+                    </div>
+                    <div className="modal-body">
+                      <p><h1>Are you Sure, you want to save this data?</h1></p>
+                    </div>
+                    <div className="modal-footer">
+                      <button type="button" className="btn btn-default" data-dismiss="modal" onClick={()=>{this.props.handleHideModal}}>Close</button>
+                      <button type="button" className="btn btn-primary" onClick={()=>{this.props.handleChange}}>Save changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            )
+        }
+    }
+{this.state.showModal ? <Modal handleHideModal={this.handleHideModal} handleChange={() => this.props.handleChange(next_url)} /> : null}

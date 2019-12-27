@@ -1,0 +1,16 @@
+<!doctype>
+<html>
+	<body>
+		<form>
+			<fieldset>
+			FirstName:
+			<input type="text" value="Swapnil" disabled>
+			<br>
+			LastName:
+			<input type="text">
+			<input type="Submit">
+			</fieldset>
+		</form>
+
+	</body>
+</html>

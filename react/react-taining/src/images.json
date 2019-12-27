@@ -1,0 +1,56 @@
+[
+  {
+    "imageCategoryId": 1,
+    "categoryName": "Landscape",
+    "images":[
+        {
+          "imageId":1,
+          "source": "1.jpeg"
+        },
+        {
+          "imageId":2,
+          "source": "2.jpeg"
+        },
+        {
+          "imageId":3,
+          "source": "3.jpeg"
+        },
+        {
+          "imageId":4,
+          "source": "4.jpeg"
+        },
+        {
+          "imageId":5,
+          "source": "5.jpeg"
+        },
+        {
+          "imageId":6,
+          "source": "6.jpeg"
+        },
+        {
+          "imageId":7,
+          "source": "7.jpeg"
+        },
+        {
+          "imageId":8,
+          "source": "8.jpeg"
+        },
+        {
+          "imageId":9,
+          "source": "9.jpeg"
+        },
+        {
+          "imageId":10,
+          "source": "10.jpeg"
+        },
+        {
+          "imageId":11,
+          "source": "11.jpeg"
+        },
+        {
+          "imageId":12,
+          "source": "12.jpeg"
+        }
+      ]
+  }
+]

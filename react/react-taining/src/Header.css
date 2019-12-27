@@ -1,0 +1,122 @@
+header {
+				background-image: url("./abcd.png");
+				width:100%;
+				text-align: center;
+				padding:40px;
+				font-size:50px;
+				color:yellow;
+			}
+
+
+img:hover{
+				border: 5px solid black
+			}
+
+
+section {
+				float:left;
+				background-image: url("./images.png");
+				width:20%;
+				height:450px;
+				font-size: 20px;
+				text-align: center;
+				padding-top: 100px;
+				vertical-align: center;
+			}
+
+
+article{
+				float:left;
+				 background-image: url("./1234.jpg");
+				width:80%;
+				height:450px;
+				text-align: center;
+				vertical-align:all;
+				padding-top: 75px;
+				overflow: scroll;
+				padding: 50px;
+			}
+
+
+
+
+
+.container-fluid_abc {
+	background-image: url('./abcd.png');
+	}
+
+.nav-link {
+	margin-top: 10px;
+	width:200px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.nav-item {
+	width:200px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.textarea1 {
+		margin-top: 5px;
+		margin-left:2px;
+		color: black;
+		background-color: white;
+}
+.nav-item, .dropdown-toggle {
+	color: white;
+}
+
+.btn, .btn-info {
+	 width:150px;
+	 margin-bottom:10px;
+}
+
+.h1-article {
+	border: 2px solid black;
+	background-color: blue;
+	color: yellow;
+}
+
+.col {
+	width:240px;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+.card {
+	margin-left:20px;
+	width:240px;
+	align-content: center;
+	background-color:lightgrey;
+}
+
+.card-img-top {
+	width:220px;
+	height:180px;
+	margin:10px;
+}
+
+.btn-success {
+	width:80px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+
+footer{
+				background-image: url("./abcd.png");
+				font-size: 40px;
+				text-align: center;
+				padding: 40px;
+				margin: auto;
+				line-height: 40px;
+				color: white;
+			}
+
+@media screen and (max-width:600px){
+							section, article, {
+								width:100%;
+								height: auto;
+							}
+						}

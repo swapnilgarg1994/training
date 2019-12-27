@@ -1,0 +1,8 @@
+header {
+				background-image: url("../images/1_i-PXQ3H7ork5fLqr2dQw6g.png");
+				width:100%;
+				text-align: center;
+				padding:40px;
+				font-size:50px;
+				color:yellow;
+			}
